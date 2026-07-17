@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>محمد خالد | Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     NAV
+══════════════════════════════════════ -->
+<nav style="direction:ltr;">
+  <a href="#hero" class="nav-logo">M<span>.</span>Khalid</a>
+  <ul class="nav-links" style="direction:rtl;">
+    <li><a href="#about">عني</a></li>
+    <li><a href="#skills">المهارات</a></li>
+    <li><a href="#projects">المشاريع</a></li>
+    <li><a href="#education">المؤهلات</a></li>
+    <li><a href="#experience">الخبرات</a></li>
+    <li><a href="#contact">تواصل</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" style="direction:rtl;">
+  <ul>
+    <li><a href="#about"      onclick="closeMenu()">عني</a></li>
+    <li><a href="#skills"     onclick="closeMenu()">المهارات</a></li>
+    <li><a href="#projects"   onclick="closeMenu()">المشاريع</a></li>
+    <li><a href="#education"  onclick="closeMenu()">المؤهلات</a></li>
+    <li><a href="#experience" onclick="closeMenu()">الخبرات</a></li>
+    <li><a href="#contact"    onclick="closeMenu()">تواصل</a></li>
+  </ul>
+</div>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <i class="fa-solid fa-circle" style="color:var(--teal); animation:pulse 2s infinite;"></i>
+      متاح للعمل والتعاون
+    </div>
+    <h1>أنا<br><span class="name">محمد خالد</span></h1>
+    <p class="hero-title">
+      <span class="hl">Data Analyst</span> · Python · Power BI · SQL
+    </p>
+    <p>
+      بدأت رحلتي في عالم التقنية باستكشاف هندسة البرمجيات وبناء الأنظمة وقواعد البيانات، وهو ما منحني فهماً عميقاً لكيفية تحرك البيانات وهيكلتها من الداخل. قادني هذا الشغف نحو التخصص في مجال تحليل البيانات (Data Analysis)؛ حيث أدمج اليوم مهاراتي البرمجية مع تقنيات التحليل الذكي لتحويل البيانات الخام إلى مرئيات واستراتيجيات تدعم اتخاذ القرار.
+    </p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">5+</span>
+        <div class="stat-label">مشاريع منجزة</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">2025</span>
+        <div class="stat-label">سنة التخرج</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">7+</span>
+        <div class="stat-label">دورات تدريبية</div>
+      </div>
+    </div>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary">
+        <i class="fa-solid fa-chart-bar"></i> مشاريعي
+      </a>
+      <a href="#contact" class="btn btn-ghost">
+        <i class="fa-solid fa-paper-plane"></i> تواصل معي
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-photo-wrap">
+    <div class="photo-frame">
+      <div class="photo-ring"></div>
+      <div class="photo-ring-2"></div>
+      <img class="photo-img" src="images/PersonalPhoto1.jpg" alt="محمد خالد" />
+      <div class="photo-badge">{ Data Analyst }</div>
+      <div class="photo-corner c1">📊</div>
+      <div class="photo-corner c2">🐍</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     ABOUT
+══════════════════════════════════════ -->
+<section class="about-section" id="about">
+  <div class="reveal">
+    <span class="section-label">// About me</span>
+    <h2 class="section-title">من أنا؟</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="about-grid reveal">
+    <div>
+      <p style="color:var(--text-muted);line-height:1.9;font-size:.96rem;">
+        محلل بيانات شغوف بفهم الأنماط الخفية داخل الأرقام. بدأت رحلتي في تطوير الويب والبرمجة الخلفية، ومن خلال بناء الأنظمة وقواعد البيانات اكتشفت أن أعظم قيمة تُضاف ليست في الكود — بل في ما تكشفه البيانات.
+      </p>
+      <div class="about-highlight">
+        اليوم أُركّز على تحليل البيانات وبناء لوحات تحكم تفاعلية باستخدام Power BI وPython وSQL، بهدف تحويل البيانات الخام إلى قرارات ذكية تخدم الأعمال.
+      </div>
+    </div>
+    <div>
+      <div class="info-list">
+        <div class="info-item">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div><strong style="color:var(--text-muted);font-weight:500;">التخصص:</strong> برمجة وتطوير الويب</div>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-university"></i>
+          <div><strong style="color:var(--text-muted);font-weight:500;">الكلية:</strong> الكلية التقنية التطبيقية بينبع</div>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-calendar-check"></i>
+          <div><strong style="color:var(--text-muted);font-weight:500;">سنة التخرج:</strong> 2025م</div>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><strong style="color:var(--text-muted);font-weight:500;">الموقع:</strong> المملكة العربية السعودية</div>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-chart-line"></i>
+          <div><strong style="color:var(--text-muted);font-weight:500;">التخصص الحالي:</strong> تحليل البيانات · Data Analysis</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SKILLS
+══════════════════════════════════════ -->
+<section class="skills-section" id="skills">
+  <div class="reveal">
+    <span class="section-label">// Skills</span>
+    <h2 class="section-title">المهارات التقنية</h2>
+    <div class="divider"></div>
+    <p class="section-sub">أدوات وتقنيات تحليل البيانات والبرمجة التي أعمل بها</p>
+  </div>
+  <div class="skills-cats reveal">
+
+    <div>
+      <div class="skill-cat-title">تحليل البيانات &amp; التقارير</div>
+      <div class="skills-row">
+        <div class="skill-pill"><span>📊</span> Power BI</div>
+        <div class="skill-pill"><span>📈</span> DAX</div>
+        <div class="skill-pill"><span>🔄</span> Power Query</div>
+        <div class="skill-pill"><span>📋</span> Excel</div>
+        <div class="skill-pill"><span>🗃️</span> SSMS</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="skill-cat-title">البرمجة &amp; قواعد البيانات</div>
+      <div class="skills-row">
+        <div class="skill-pill"><span>🐍</span> Python</div>
+        <div class="skill-pill"><span>🗄️</span> SQL</div>
+        <div class="skill-pill"><span>🟩</span> Django</div>
+        <div class="skill-pill"><span>🗃️</span> MySQL</div>
+        <div class="skill-pill"><span>📦</span> SQLite</div>
+        <div class="skill-pill"><span>🌐</span> HTML &amp; CSS</div>
+        <div class="skill-pill"><span>🐘</span> PHP</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="skill-cat-title">المهارات الشخصية</div>
+      <div class="skills-row">
+        <div class="skill-pill"><span>🤝</span> تعاون الفريق</div>
+        <div class="skill-pill"><span>⏱️</span> إدارة الوقت</div>
+        <div class="skill-pill"><span>🔄</span> التعلم المستمر</div>
+        <div class="skill-pill"><span>💡</span> مرونة عالية</div>
+        <div class="skill-pill"><span>🧩</span> حل المشكلات</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     PROJECTS
+══════════════════════════════════════ -->
+<section class="projects-section" id="projects">
+  <div class="reveal">
+    <span class="section-label">// Projects</span>
+    <h2 class="section-title">مشاريعي</h2>
+    <div class="divider"></div>
+    <p class="section-sub">مشاريع تحليل بيانات وتطوير ويب — من الفكرة إلى التنفيذ</p>
+  </div>
+
+  <!-- Tabs -->
+  <div class="projects-tabs reveal">
+    <button class="tab-btn active" data-tab="data" onclick="switchTab('data')">
+      📊 تحليل البيانات
+    </button>
+    <button class="tab-btn" data-tab="web" onclick="switchTab('web')">
+      💻 مشاريع برمجية
+    </button>
+  </div>
+
+  <!-- ── Panel: Data Analysis ── -->
+  <div class="projects-panel active" id="panel-data">
+
+    <!-- Featured: Tourism -->
+    <div class="project-card featured reveal">
+      <div style="flex:1;">
+        <div class="project-type">// Data Analysis · Featured Project</div>
+        <div class="project-icon-wrap">📊</div>
+        <h3>مؤشرات أداء السياحة الوافدة في المملكة العربية السعودية 2025</h3>
+        <p>
+          تحليل شامل لمؤشرات أداء السياحة الوافدة لعام 2025، يرصد حجم التدفق الكلي للسياح وحجم الإنفاق الملياري عبر كافة المنافذ. يكشف التحليل أن المنفذ الجوي هو المحرك الاستراتيجي الأول للأداء المالي، فيما يمثل البري ركيزة استدامة قطاع الضيافة، ويُسجّل البحري مفاجأة رقمية في كثافة معدل الإقامة. بُني المشروع بـ Power BI لتحويل بيانات وزارة السياحة إلى رؤى استراتيجية تدعم اتخاذ القرار.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">DAX</span>
+          <span class="tag">Power Query</span>
+          <span class="tag">Data Analysis</span>
+          <span class="tag">Business Insights</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/mohmadalkushi-star/Saudi-Tourism-Analysis-2025" target="_blank" class="project-link">
+            GitHub <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="project-preview">
+        <div class="preview-bar">
+          <div class="preview-dot d1"></div>
+          <div class="preview-dot d2"></div>
+          <div class="preview-dot d3"></div>
+          <div class="preview-url">Saudi Tourism Dashboard · Power BI</div>
+        </div>
+        <div class="preview-content">
+          <div class="preview-kpis">
+            <div class="preview-kpi">
+              <div class="preview-kpi-num">29M</div>
+              <div class="preview-kpi-lbl">سياح</div>
+            </div>
+            <div class="preview-kpi">
+              <div class="preview-kpi-num">176bn</div>
+              <div class="preview-kpi-lbl">إنفاق (ر.س)</div>
+            </div>
+            <div class="preview-kpi">
+              <div class="preview-kpi-num">6K</div>
+              <div class="preview-kpi-lbl">متوسط/سائح</div>
+            </div>
+          </div>
+          <div class="preview-bar-chart" style="margin-top:.4rem;">
+            <div class="preview-bar-row">
+              <span style="width:30px;flex-shrink:0;">جوي</span>
+              <div class="preview-bar-fill" style="width:80%;"></div>
+              <span>$143bn</span>
+            </div>
+            <div class="preview-bar-row">
+              <span style="width:30px;flex-shrink:0;">بري</span>
+              <div class="preview-bar-fill" style="width:22%;opacity:.6;"></div>
+              <span>$32bn</span>
+            </div>
+            <div class="preview-bar-row">
+              <span style="width:30px;flex-shrink:0;">بحري</span>
+              <div class="preview-bar-fill" style="width:7%;opacity:.35;"></div>
+              <span>$1bn</span>
+            </div>
+          </div>
+          <img src="images/Saudi_Tourismimage.jpg" alt="Saudi Tourism Dashboard" class="project-img" style="margin-top:.6rem;height:130px;" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Data projects grid -->
+    <div class="projects-grid">
+
+      <!-- TechZone -->
+      <div class="project-card reveal">
+        <div class="project-type">// Data Analysis · SQL + Power BI</div>
+        <img src="images/techzoneimage.jpg" alt="TechZone Dashboard" class="project-img" />
+        <div class="project-icon-wrap">🛒</div>
+        <h3>TechZone: End-to-End Sales Intelligence Dashboard</h3>
+        <p>
+          دورة حياة بيانات متكاملة لمتجر إلكترونيات — من هندسة قاعدة البيانات في SSMS وكتابة استعلامات SQL معقدة (Joins، CTEs، Aggregations)، إلى لوحة Power BI تكشف المنتجات الرابحة، أداء الفروع، وفرص التوسع الجغرافي. بُنيت بيانات اصطناعية (100 عميل، 500 طلب) لمحاكاة سيناريوهات واقعية.
+        </p>
+        <div class="project-tags">
+          <span class="tag">SQL Server</span>
+          <span class="tag">SSMS</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">DAX</span>
+          <span class="tag">Power Query</span>
+          <span class="tag">Data Modeling</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/mohmadalkushi-star/TechZone-Dashboard/blob/main/README.md" target="_blank" class="project-link">
+            GitHub <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Roshn League -->
+      <div class="project-card reveal">
+        <div class="project-type">// Data Analysis · Power BI</div>
+        <img src="images/rousonleagueimage.jpg" alt="Roshn League Dashboard" class="project-img" />
+        <div class="project-icon-wrap">⚽</div>
+        <h3>تحليل الأداء الجماهيري لدوري روشن السعودي (Q1 - 2025)</h3>
+        <p>
+          تحليل الأداء الجماهيري والتشغيلي للربع الأول من دوري روشن 2025. استخدمت Power Query لمعالجة البيانات الخام وبناء أعمدة مخصصة للفرق. أبرز النتائج: جدة سجّلت 333K مشجع رغم 10 مباريات فقط، والجمعة يوم الذروة بـ 309K مشجع، وملعب الإنماء حقق أفضل كفاءة تشغيلية (منظم واحد لكل 21 مشجع).
+        </p>
+        <div class="project-tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">Power Query</span>
+          <span class="tag">DAX</span>
+          <span class="tag">Data Analysis</span>
+          <span class="tag">Sports Analytics</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/mohmadalkushi-star/Saudi-League-Attendance-Dashboard2025" target="_blank" class="project-link">
+            GitHub <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Panel: Web Projects ── -->
+  <div class="projects-panel" id="panel-web">
+    <div class="projects-grid">
+
+      <!-- Fazaa -->
+      <div class="project-card reveal">
+        <div class="project-type">// Web Development · Django</div>
+        <div class="project-icon-wrap">🤝</div>
+        <h3>فزعة</h3>
+        <p>منصة مجتمعية تربط الأفراد بمن يحتاجهم في أوقات الحاجة. بُنيت بـ Django مع قاعدة بيانات MySQL، وتهدف لإيجاد قطع الغيار المتوفرة في أحياء المدينة.</p>
+        <div class="project-tags">
+          <span class="tag">Django</span>
+          <span class="tag">Python</span>
+          <span class="tag">MySQL</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/mohmadalkushi-star/fazaa" target="_blank" class="project-link">
+            GitHub <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Blog -->
+      <div class="project-card reveal">
+        <div class="project-type">// Web Development · Django</div>
+        <div class="project-icon-wrap">✍️</div>
+        <h3>مدونتي الشخصية</h3>
+        <p>منصة مدونة شخصية مشابهة لتويتر — أنشر فيها مقالاتي وأفكاري مع نظام تعليقات متكامل وقاعدة بيانات SQLite. مستضافة على PythonAnywhere.</p>
+        <div class="project-tags">
+          <span class="tag">Django</span>
+          <span class="tag">Python</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">PythonAnywhere</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/mohmadalkushi-star/my_blog" target="_blank" class="project-link">
+            GitHub <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Harfi -->
+      <div class="project-card reveal">
+        <div class="project-type">// Graduation Project · PHP</div>
+        <div class="project-icon-wrap">🔨</div>
+        <h3>حرفي</h3>
+        <p>منصة إلكترونية شاملة تربط الحرفيين والمحلات التجارية بالعملاء، مع نظام بحث متقدم ولوحة تحكم Dashboard لإدارة الخدمات والحجوزات.</p>
+        <div class="project-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">HTML &amp; CSS</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Dashboard</span>
+        </div>
+        <div class="project-footer">
+          <span style="font-size:.78rem;color:var(--text-muted);font-family:'Space Mono',monospace;">مشروع تخرج 🎓</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     EDUCATION (NEW)
+══════════════════════════════════════ -->
+<section class="edu-section" id="education">
+  <div class="reveal">
+    <span class="section-label">// Education</span>
+    <h2 class="section-title">المؤهلات العلمية</h2>
+    <div class="divider"></div>
+    <p class="section-sub">مسيرتي الأكاديمية والتقنية</p>
+  </div>
+  <div class="edu-grid reveal">
+
+    <div class="edu-card">
+      <div class="edu-icon">🎓</div>
+      <div class="edu-degree">دبلوم تقنية برمجة وتطوير الويب</div>
+      <div class="edu-school">الكلية التقنية التطبيقية بينبع</div>
+      <p style="font-size:.85rem;color:var(--text-muted);margin-top:.5rem;line-height:1.7;">
+        تخصص في برمجة وتطوير الويب، يشمل هندسة البرمجيات، قواعد البيانات، تطوير الواجهات الأمامية والخلفية، وإدارة المشاريع التقنية.
+      </p>
+      <div class="edu-year"><i class="fa-solid fa-calendar"></i> 2025م</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     EXPERIENCE & COURSES
+══════════════════════════════════════ -->
+<section class="exp-section" id="experience">
+  <div class="reveal">
+    <span class="section-label">// Experience &amp; Training</span>
+    <h2 class="section-title">الخبرات والدورات</h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="exp-layout reveal">
+    <div>
+      <div class="cat-head">المحطات الأبرز</div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="tl-date">2025</div>
+          <div class="tl-title">خريج تطوير الويب — كلية ينبع التقنية</div>
+          <div class="tl-sub">تخرجت بمشروع تخرج تقني متكامل (حرفي) في تخصص برمجة وتطوير الويب.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="tl-date">2025</div>
+          <div class="tl-title">تحليل بيانات السياحة والدوري — Power BI</div>
+          <div class="tl-sub">بناء لوحتي تحليل بيانات متكاملتين باستخدام Power BI وبيانات حكومية مفتوحة.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="tl-date">2025</div>
+          <div class="tl-title">TechZone — End-to-End Data Project</div>
+          <div class="tl-sub">هندسة قاعدة بيانات كاملة في SSMS مع لوحة Power BI لمحاكاة بيئة عمل تجارية حقيقية.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="tl-date">2024</div>
+          <div class="tl-title">تنظيم هاكاثون — كلية ينبع</div>
+          <div class="tl-sub">عضو في فريق تنظيم هاكاثون تقني شارك فيه طلاب من مختلف التخصصات.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="tl-date">2024</div>
+          <div class="tl-title">مؤتمر مشاريع التخرج — شهادة شكر</div>
+          <div class="tl-sub">حصلت على شهادة شكر وتقدير لمشاركتي في مؤتمر مشاريع التخرج بالكلية.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="tl-date">2023</div>
+          <div class="tl-title">مشروع تطوعي — اليوم الوطني 93</div>
+          <div class="tl-sub">شاركت في مشروع برمجي تطوعي بمناسبة اليوم الوطني السعودي 93.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div>
+      <div class="cat-head">الدورات والتدريب</div>
+      <div class="courses-list">
+        <div class="course-item">
+          <div class="course-dot"><i class="fa-solid fa-code"></i></div>
+          <div>
+            <div class="course-name">مقدمة في HTML &amp; CSS</div>
+            <div class="course-plat">منصة سطر</div>
+          </div>
+        </div>
+        <div class="course-item">
+          <div class="course-dot"><i class="fa-brands fa-python"></i></div>
+          <div>
+            <div class="course-name">دورة Python</div>
+            <div class="course-plat">منصة سطر</div>
+          </div>
+        </div>
+        <div class="course-item">
+          <div class="course-dot"><i class="fa-solid fa-database"></i></div>
+          <div>
+            <div class="course-name">SQL 102</div>
+            <div class="course-plat">منصة سطر</div>
+          </div>
+        </div>
+        <div class="course-item">
+          <div class="course-dot"><i class="fa-solid fa-pen-ruler"></i></div>
+          <div>
+            <div class="course-name">UI/UX Design &amp; UX Research</div>
+            <div class="course-plat">منصة سطر</div>
+          </div>
+        </div>
+        <div class="course-item">
+          <div class="course-dot"><i class="fa-solid fa-shield"></i></div>
+          <div>
+            <div class="course-name">الأمن السيبراني</div>
+            <div class="course-plat">منصة دروب</div>
+          </div>
+        </div>
+        <div class="course-item">
+          <div class="course-dot"><i class="fa-solid fa-microchip"></i></div>
+          <div>
+            <div class="course-name">التحول الرقمي + تطوير تطبيقات الويب</div>
+            <div class="course-plat">منصة دروب</div>
+          </div>
+        </div>
+        <div class="course-item">
+          <div class="course-dot"><i class="fa-solid fa-users"></i></div>
+          <div>
+            <div class="course-name">مهارات الذكاء الاجتماعي &amp; القيادة</div>
+            <div class="course-plat">منصة دروب</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════ -->
+<section class="contact-section" id="contact">
+  <div class="contact-grid">
+    <div class="reveal">
+      <span class="section-label">// Contact</span>
+      <h2 class="section-title">تواصل معي</h2>
+      <div class="divider"></div>
+      <p class="contact-desc">
+        هل لديك مشروع تحليل بيانات تريد تنفيذه؟<br>
+        أو تريد فقط تقول مرحبا؟ أنا هنا!
+      </p>
+      <div class="social-links">
+        <a href="https://github.com/mohmadalkushi-star" target="_blank" class="social-btn" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mohammed-aljuhani-b2813232b/" target="_blank" class="social-btn" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://x.com/M7mdDev_" target="_blank" class="social-btn" title="X / Twitter">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-cards reveal">
+      <a href="mailto:mohammedkhalidju@gmail.com" class="contact-card">
+        <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div>
+          <div class="contact-card-text">البريد الإلكتروني</div>
+          <div class="contact-card-val">mohammedkhalidju@gmail.com</div>
+        </div>
+      </a>
+      <a href="tel:+966568039610" class="contact-card">
+        <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+        <div>
+          <div class="contact-card-text">رقم الجوال</div>
+          <div class="contact-card-val" style="direction:ltr;">+966 568 039 610</div>
+        </div>
+      </a>
+      <a href="https://github.com/mohmadalkushi-star" target="_blank" class="contact-card">
+        <div class="contact-card-icon"><i class="fa-brands fa-github"></i></div>
+        <div>
+          <div class="contact-card-text">GitHub</div>
+          <div class="contact-card-val">mohmadalkushi-star</div>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/mohammed-aljuhani-b2813232b/" target="_blank" class="contact-card">
+        <div class="contact-card-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+        <div>
+          <div class="contact-card-text">LinkedIn</div>
+          <div class="contact-card-val">mohammed-aljuhani</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer>
+  <p>صُنع بـ <span class="teal"></span> بواسطة <span class="teal">محمد خالد</span> · 2025 · Data Analyst</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
